@@ -30,7 +30,7 @@ jobs:
       - name: Build and push to Dockerhub
         uses: docker/build-push-action@v3
         with:
-          context: ./app
+          context: ./next-app
           file: ./next-app/Dockerfile
           push: true
           tags: 13angs/nextjs-demo:latest
